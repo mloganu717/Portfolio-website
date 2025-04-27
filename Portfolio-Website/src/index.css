@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark; /* Ensure dark mode */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@layer base {
+  a {
+    @apply font-medium no-underline;
+  }
+
+  a:hover {
+    @apply text-primary; /* Use Tailwind's text-primary utility */
+    /* text-decoration: underline; */ /* Optional: remove underline on hover */
+  }
+}
+
+/* Remove default button styles if Tailwind classes handle everything */
+/* button { ... } */
+/* button:hover { ... } */
+/* button:focus, button:focus-visible { ... } */
+
+/* Remove light mode specific styles */
+/* @media (prefers-color-scheme: light) { ... } */
+
+/* Adjust or remove glass-effect if not used */
+/* .glass-effect { ... } */
+
+/* Remove gradient-text if not used */
+/* .gradient-text { ... } */
+
+/* Remove vertical-text helper if Tailwind classes handle rotation */
+/* .vertical-text { ... } */
